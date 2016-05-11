@@ -1,0 +1,10 @@
+PREFIX : <http://www.example.org/family#>
+
+CONSTRUCT {
+	?grandchild :grandfather ?grandfather .
+}
+WHERE {
+	{ ?grandchild :mother ?parent . }
+		UNION { ?grandchild :father ?parent . }
+	?parent :father ?grandfather .
+}

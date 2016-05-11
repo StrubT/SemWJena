@@ -1,0 +1,10 @@
+PREFIX store: <http://cdmusic.org/store#>
+PREFIX cdmusic: <http://cdmusic.org/cds#>
+PREFIX artist: <http://cdmusic.org/artist#>
+
+SELECT ?name (SUM(?stock) AS ?albums)
+WHERE {
+	[] cdmusic:artist ?artist ;
+		store:available ?stock .
+	?artist cdmusic:name ?name .
+} GROUP BY ?artist ?name

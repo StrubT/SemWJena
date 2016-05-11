@@ -1,0 +1,11 @@
+PREFIX store: <http://cdmusic.org/store#>
+PREFIX cdmusic: <http://cdmusic.org/cds#>
+PREFIX artist: <http://cdmusic.org/artist#>
+
+SELECT ?name ?price
+WHERE {
+	?artist cdmusic:name "Norah Jones" .
+	?album cdmusic:artist ?artist ;
+		cdmusic:album ?name .
+	OPTIONAL { ?album store:price ?price . }
+}

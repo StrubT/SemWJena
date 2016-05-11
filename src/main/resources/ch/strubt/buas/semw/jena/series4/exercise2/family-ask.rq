@@ -1,0 +1,5 @@
+PREFIX : <http://www.example.org/family#>
+
+ASK {
+	[] :mother :regina
+}

@@ -1,0 +1,48 @@
+@prefix store: <http://cdmusic.org/store#> .
+@prefix cdmusic: <http://cdmusic.org/cds#> .
+@prefix artist: <http://cdmusic.org/artist#> .
+
+artist:rollingstones cdmusic:name "The Roling Stones" .
+artist:sting cdmusic:name "Sting" .
+artist:norahjones cdmusic:name "Norah Jones" .
+artist:ericclapton cdmusic:name "Eric Clapton" .
+
+store:item1 cdmusic:artist artist:rollingstones ;
+  cdmusic:album "Sticky Fingers" ;
+  cdmusic:year 1971 ;
+  store:price 18 ;
+  store:available 2 .
+
+store:item2 cdmusic:artist artist:rollingstones ;
+  cdmusic:album "Aftermath" ;
+  store:price 15 ;
+  store:available 1 .
+
+store:item3 cdmusic:artist artist:sting ;
+  cdmusic:album "The Dream of the Blue Turtles" ;
+  cdmusic:year 1985 ;
+  store:price 23 ;
+  store:available 5 .
+
+store:item4 cdmusic:artist artist:ericclapton ;
+  cdmusic:album "Rivers of Tears" ;
+  cdmusic:year 1977 ;
+  store:price 15 ;
+  store:available 3 .
+
+store:item5 cdmusic:artist artist:norahjones ;
+  cdmusic:album "Not to Late" ;
+  store:price 22 ;
+  store:available 6 .
+
+store:item6 cdmusic:artist artist:norahjones ;
+  cdmusic:album "The Fall" ;
+  cdmusic:year 2009 ;
+  store:available 3 .
+
+store:item7 cdmusic:artist artist:sting ;
+  cdmusic:album "Live in Berlin" ;
+  cdmusic:year 2010 ;
+  store:price 26 ;
+  store:available 2 .
+
